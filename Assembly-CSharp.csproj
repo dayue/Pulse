@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{37E67B10-EAF5-E42F-E090-2DFADABC0EE8}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_PSM;ENABLE_MICROPHONE;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_AUDIO_MANAGER_BASED_SCHEDULING;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY_PSM_API;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/day/Unity PSM/Editor/Data/PlaybackEngines/PSM/Tools/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/day/Unity PSM/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Cubes\ColourFade.cs" />
+     <Compile Include="Assets\Scripts\Cubes\ECubeFade.cs" />
+     <Compile Include="Assets\Scripts\Cubes\ScaleFade.cs" />
+     <Compile Include="Assets\Scripts\Cubes\SpawnCubes.cs" />
+     <Compile Include="Assets\Scripts\Cubes\Spinner.cs" />
+     <Compile Include="Assets\Scripts\Data\Achievements\Achievement.cs" />
+     <Compile Include="Assets\Scripts\Data\Achievements\AchievementProps.cs" />
+     <Compile Include="Assets\Scripts\Data\GameDefinitions.cs" />
+     <Compile Include="Assets\Scripts\GameManager\AchievementManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\Interface.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceObjects\ButtonManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceObjects\TextFieldManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceObjects\TextManager.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceObjects\gButton.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceObjects\gText.cs" />
+     <Compile Include="Assets\Scripts\Interface\InterfaceObjects\gTextField.cs" />
+     <Compile Include="Assets\Scripts\Interface\Interfaces\InterfaceAchievements.cs" />
+     <Compile Include="Assets\Scripts\Interface\Interfaces\InterfaceInGame.cs" />
+     <Compile Include="Assets\Scripts\Interface\Interfaces\InterfaceMainMenu.cs" />
+     <Compile Include="Assets\Scripts\Interface\Interfaces\InterfaceTitle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\ChangeLevel.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\DeathTimer.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\FollowPath.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\HardModeInitiate.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\PulseShooter.cs" />
+     <Compile Include="Assets\Scripts\Pawn\MasterPawn.cs" />
+     <Compile Include="Assets\Scripts\Pawn\MovementProperties.cs" />
+     <Compile Include="Assets\Scripts\Pawn\PawnMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerController\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\PlayerController\MasterPlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerController\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Pulsers\DistancePulser.cs" />
+     <Compile Include="Assets\Scripts\Pulsers\TimedPulser.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
